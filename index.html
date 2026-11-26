@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — FocusGuard</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #111827;
+      --border: #1f2937;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --green: #10b981;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--green);
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; color: #fff; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+    h2 { color: var(--accent); font-size: 18px; margin-top: 28px; margin-bottom: 10px; }
+    p, li { color: var(--text); font-size: 15px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    code {
+      background: #1e293b;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #7dd3fc;
+    }
+    footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">100% On-Device Privacy</div>
+    <h1>Privacy Policy for FocusGuard</h1>
+    <div class="meta">
+      <strong>Package Name:</strong> <code>com.focusguard.studyshield</code> &nbsp;|&nbsp;
+      <strong>Developer:</strong> Quantyxio &nbsp;|&nbsp;
+      <strong>Effective Date:</strong> 26 November 2026
+    </div>
+
+    <p>
+      This Privacy Policy explains how <strong>FocusGuard</strong> ("the App", package <code>com.focusguard.studyshield</code>) handles user and device information. FocusGuard is designed as a privacy-first, completely offline focus and digital wellbeing utility.
+    </p>
+
+    <h2>1. Summary: Zero Data Collection &amp; Zero Sharing</h2>
+    <ul>
+      <li><strong>No personal data collected:</strong> FocusGuard does not collect, store on external servers, sell, or transmit your name, email, contacts, messages, browsing history, or app usage logs.</li>
+      <li><strong>No third-party sharing:</strong> FocusGuard contains no advertising SDKs, no analytics trackers, and no cloud servers. We do not share any data with third parties.</li>
+      <li><strong>All processing stays on your device:</strong> All focus rules, timers, and app blocking happen locally on your Android device.</li>
+    </ul>
+
+    <h2>2. Permissions We Request &amp; Why</h2>
+    <p>To pause distracting apps and hide their notifications during an active Focus session, FocusGuard requests the following Android permissions strictly for core app functionality:</p>
+    <ul>
+      <li>
+        <strong>Installed Applications (<code>QUERY_ALL_PACKAGES</code>):</strong> Used only to display your installed apps inside FocusGuard's app-selection list so you can choose which apps to pause during Focus Mode. This list is never transmitted off your device.
+      </li>
+      <li>
+        <strong>Usage Access (<code>PACKAGE_USAGE_STATS</code>):</strong> Used locally in real time during an active Focus session to detect whether the foreground app is one you chose to pause. Usage history is never recorded, profiled, or uploaded.
+      </li>
+      <li>
+        <strong>Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code>):</strong> Used to show the full-screen Focus Shield overlay when you open a paused app during an active session.
+      </li>
+      <li>
+        <strong>Accessibility Service (<code>BIND_ACCESSIBILITY_SERVICE</code> — Optional):</strong> Used solely to detect window-state changes (<code>TYPE_WINDOW_STATE_CHANGED</code>) for user-selected paused apps and return to the Home screen. FocusGuard sets <code>canRetrieveWindowContent="false"</code> and never reads screen text, keystrokes, passwords, or personal content.
+      </li>
+      <li>
+        <strong>Notification Access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code> — Optional):</strong> Used solely to temporarily snooze/hide notifications from user-selected paused apps while Focus Mode is active, and restore them when Focus Mode ends. FocusGuard never reads, logs, or transmits notification message contents.
+      </li>
+      <li>
+        <strong>Notifications &amp; Foreground Service (<code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>):</strong> Used to display the persistent FocusGuard control bar in your notification shade so you can view remaining time, take a break, or turn off Focus Mode.
+      </li>
+    </ul>
+
+    <h2>3. Local Storage</h2>
+    <p>
+      FocusGuard stores only your app preferences locally on your device using Android <code>SharedPreferences</code> (selected package names to pause, session duration, activity label, strict mode toggle, and local blocked-attempt counter). Uninstalling the App removes all locally stored preferences.
+    </p>
+
+    <h2>4. Children's Privacy</h2>
+    <p>
+      FocusGuard does not knowingly collect any personal information from children or any other users, as no personal data leaves the device.
+    </p>
+
+    <h2>5. Changes to This Policy</h2>
+    <p>
+      If we update this Privacy Policy, the revised version will be posted on this page with an updated effective date.
+    </p>
+
+    <h2>6. Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy or FocusGuard, please contact us via our GitHub organization at
+      <a href="https://github.com/quantyxio-cloud" style="color:#38bdf8;">https://github.com/quantyxio-cloud</a>.
+    </p>
+
+    <footer>
+      FocusGuard (<code>com.focusguard.studyshield</code>) • Quantyxio • All processing is performed locally on-device.
+    </footer>
+  </div>
+</body>
+</html>
